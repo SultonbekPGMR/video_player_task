@@ -41,6 +41,8 @@ class _VideoDownloadScreenState extends State<VideoDownloadScreen> {
                 const SizedBox(height: 12),
                 ElevatedButton(
                   onPressed: () {
+                    context.navigateTo(UniversalVideoPlayer(source: 'https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8'));
+                    return;
                     final url = _urlController.text.trim();
                     if (url.isNotEmpty) {
                       context.read<VideoDownloadBloc>().add(

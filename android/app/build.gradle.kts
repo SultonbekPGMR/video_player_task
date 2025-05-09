@@ -7,6 +7,7 @@ plugins {
 
 android {
     namespace = "uz.gita.video_player_task"
+
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -41,4 +42,11 @@ android {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    implementation("androidx.media3:media3-exoplayer:1.2.1")
+    implementation("androidx.media3:media3-exoplayer-hls:1.2.1")
+    implementation("androidx.media3:media3-datasource:1.2.1")
+    implementation("androidx.media3:media3-datasource-okhttp:1.2.1")
 }
